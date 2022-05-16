@@ -14,7 +14,7 @@ async function getBRLPrice()
     return data;
 }
 
-getDolarPrice().then((data)=> document.getElementById("dolarPrice").innerHTML = "R$ " + JSON.stringify(data).substring(157, 161));
-getBRLPrice().then((data)=> document.getElementById("brlPrice").innerHTML = "U$D " + JSON.stringify(data).substring(155, 159));
+getDolarPrice().then((data)=> document.getElementById("dolarPrice").innerHTML = "R$ " + data.USDBRL.bid;
+getBRLPrice().then((data)=> document.getElementById("brlPrice").innerHTML = "U$D " + data.BRLUSD.bid;
 
 
