@@ -1,16 +1,16 @@
 async function getDolarPrice() 
 {
     let response = await
-    fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL")
-    let data = await response.json()
+    fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL");
+    let data = await response.json();
     return data;
 }
 
 async function getBRLPrice() 
 {
     let response = await
-    fetch("https://economia.awesomeapi.com.br/json/last/BRL-USD")
-    let data = await response.json()
+    fetch("https://economia.awesomeapi.com.br/json/last/BRL-USD");
+    let data = await response.json();
     return data;
 }
 
